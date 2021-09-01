@@ -14,8 +14,6 @@ const boxes = document.querySelectorAll('.box')
 
 const winnerTitle = document.querySelector('.winner')
 
-console.log(winnerTitle)
-
 // горизонталь
 const caseWin1 = [[], []]
 const caseWin2 = [[], []]
@@ -94,8 +92,6 @@ boxes.forEach(function (box) {
       }
 
 
-      console.log(caseWin1);
-
       if (caseWin1[player].length === 3 ||
         caseWin2[player].length === 3 ||
         caseWin3[player].length === 3 ||
@@ -170,8 +166,6 @@ boxes.forEach(function (box) {
       }
 
 
-      console.log(caseWin1);
-
       if (
         caseWin1[player].length === 3 ||
         caseWin2[player].length === 3 ||
@@ -181,7 +175,7 @@ boxes.forEach(function (box) {
         caseWin6[player].length === 3 ||
         caseWin7[player].length === 3 ||
         caseWin8[player].length === 3) {
-        console.log('Winner Player X ');
+        console.log('Winner Player O ');
         winnerTitle.textContent = 'Winner Player O'
       }
 
